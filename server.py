@@ -5,7 +5,6 @@ app = Flask(__name__)
 
 @app.route('/')
 def index():
-    exec(open("initdb.py").read())
     return render_template("home.html")
 
 @app.route('/enternew')
@@ -14,8 +13,13 @@ def enternew():
 
 @app.route('/addfood', methods = ["POST"])
 def addfood():
-    connection = sqlite3.connect('database.db')
-    cursor = connection.cursor()
+    try:
+        connection = sqlite3.connect('database.db')
+        cursor = connection.cursor()
+    except:
+        exec(open("initdb.py").read())
+        connection = sqlite3.connect('database.db')
+        cursor = connection.cursor()
     
     try:
         name = request.form['name']
