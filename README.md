@@ -1,4 +1,4 @@
-<summary># Homework #3</summary>
+<summary><h1>Homework #3</h1></summary>
 
 <details>
 ## Instructions
