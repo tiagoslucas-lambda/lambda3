@@ -1,5 +1,6 @@
-# Homework #3
+<summary># Homework #3</summary>
 
+<details>
 ## Instructions
 ---
 1. Create a project folder.  Setup your virtual environment.  Install `flask`.
@@ -114,3 +115,4 @@ Our part time and full time courses are 13 intense weeks of focused study on the
 Class sizes are small to ensure that each student gets individual attention from our world class instructors to help them succeed.
 
 For more information visit: https://lambdaschool.com
+</details>
